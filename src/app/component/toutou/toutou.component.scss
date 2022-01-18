@@ -1,0 +1,57 @@
+.toutou {
+  display: flex;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  &:nth-child(even) {
+    background-color: #eee;
+  }
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  .task {
+    flex: 1 1 100%;
+  }
+  .description {
+    flex: 1 1 100%;
+  }
+}
+.toutou.done {
+  .task {
+    text-decoration: line-through;
+  }
+  .description {
+    text-decoration: line-through;
+  }
+}
+.toutou-input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  appearance: none;
+  border: none;
+  background-color: #f3f3f3;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+}
+.toutou-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #4360ff;
+  color: #fff;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #4360ff;
+}

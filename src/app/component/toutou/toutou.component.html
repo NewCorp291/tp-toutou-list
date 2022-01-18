@@ -1,0 +1,17 @@
+<div class="toutous">
+    <form (submit)="submTodo()">
+        <input 
+            type="text"
+            name="addTodo"
+            placeholder="Entré une tache..."
+            class="todo-add"
+            [(ngModel)]="addTodo"
+        >
+        <input type="submit" value="Ajouter" class="todo-submit">
+    </form>
+    <div class="toutou" *ngFor="let todo of toutou;" class="todo {{ (todo.completed ? 'done' : '') }}">
+        <div class="task">Tache : {{ todo.task }}</div>
+        <div class="description">Description : {{ todo.description }}</div>
+        <button class="delete">Supprimer</button>
+    </div>
+</div>
